@@ -1,0 +1,100 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-item img{
+  width: 100% !important;
+  height: 75vh !important;
+}
+
+#joe{
+  border: 1px solid white !important;
+  border-radius: 50% !important;
+  transition-duration: 0.10s !important;
+}
+
+#joe:hover{
+  background-color: greenyellow !important;
+}
+
+.wrapper{
+  position: relative !important;
+  width: 100% !important;
+}
+
+.joe{
+  position: absolute !important;
+  z-index: 5 !important;
+  color: white !important;
+  display: flex !important;
+  width: 100% !important;
+  justify-content: space-between !important;
+}
+
+#ray, #king, #fast{
+  width: 30% !important;
+}
+
+#king a{
+  color: white !important;
+}
+
+#turn{
+  position: absolute !important;
+  top: 6vh !important;
+  background-color: green !important;
+  opacity: 0.9 !important;
+  z-index: 5 !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#turn a{
+  text-decoration: none;
+  color: white;
+
+}
+
+#turn img{
+  width: 120px !important;
+  max-width: 100% !important;
+  margin-left: 20px !important;
+}
+
+.drodown{
+  background-color: rgb(10, 216, 10) !important;
+  padding-left: 30px !important;
+}
+
+.navbar-nav{
+  color: black !important;
+}
+.dropdown-item{
+  color: black !important;
+}
+.nav-item{
+  margin-left: 80px !important;
+}
+
+.container0 img{
+  width: 300px !important;
+  max-width: 100% !important;
+  margin-right: 10px !important;
+}
+
+.farma1{
+  height: 80vh !important;
+}
+
+.just{
+  border-radius: 50% !important;
+  padding: 15px 30px !important;
+  background-color: green !important;
+  color: white !important;
+  font-size: 100px !important;
+  margin-bottom: 25px !important;
+}
