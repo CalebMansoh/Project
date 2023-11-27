@@ -13,6 +13,10 @@
   .wrapper{
     width: 100%;
   }
+
+  .joe{
+    display: none;
+  }
   
   #term img{
     width: 100%;
@@ -21,8 +25,8 @@
   #run .container img{
     width: 100%;
   }
-
-  #sand span{
-    display: inline-block;
+  .flex{
+    display: block;
+    justify-content: space-between;
   }
 }
