@@ -1,6 +1,7 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: Roboto;
 }
 
 .carousel-item img{
@@ -97,4 +98,25 @@
   color: white !important;
   font-size: 100px !important;
   margin-bottom: 25px !important;
+}
+
+#pans button:hover{
+  color: white !important;
+  background-color: yellow !important;
+  border: none !important;
+}
+
+#deer{
+  border: 1px solid yellow;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.stylefooter{
+  background-color: green;
+  border-top: 10px solid yellow !important;
+}
+
+.stylefooter img{
+  background-color: green !important;
 }
