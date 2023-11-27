@@ -15,7 +15,12 @@
   }
 
   .joe{
-    display: none;
+    position: absolute !important;
+    z-index: 5 !important;
+    color: white !important;
+    display: flex !important;
+    width: 100% !important;
+    justify-content: space-between !important;
   }
   
   #term img{
