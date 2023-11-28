@@ -37,6 +37,10 @@
   width: 30% !important;
 }
 
+#flex{
+  display: flex;
+}
+
 #king a{
   color: white !important;
 }
@@ -107,6 +111,10 @@
   color: white !important;
   background-color: yellow !important;
   border: none !important;
+}
+
+#run{
+  display: flex;
 }
 
 #deer{

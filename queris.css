@@ -14,13 +14,8 @@
     width: 100%;
   }
 
-  .joe{
-    position: absolute !important;
-    z-index: 5 !important;
-    color: white !important;
-    display: flex !important;
-    width: 100% !important;
-    justify-content: space-between !important;
+  #ray, #king, #fast{
+    display: none;
   }
   
   #term img{
@@ -29,9 +24,53 @@
 
   #run .container img{
     width: 100%;
+    margin-bottom: 20px;
   }
+
+  #run{
+    display: block;
+    width: 100%;
+  }
+
   .flex{
     display: block;
     justify-content: space-between;
+  }
+
+  #flex{
+    display: block;
+    text-align: center;
+  }
+
+  #flex img{
+    max-width: 100%;
+    align-items: center;
+    margin-left: 25px;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .wrapper{
+    width: 100%;
+  }
+  
+  #term img{
+    width: 100%;
+  }
+
+  #run .container img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #flex{
+    display: block;
+    text-align: center;
+  }
+
+  #flex img{
+    max-width: 100%;
+    align-items: center;
+    margin-left: 25px;
   }
 }
