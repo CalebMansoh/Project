@@ -1,0 +1,38 @@
+/* :root{
+  --bg-color: #e2e2ff;
+  --text-color: #111;
+  --transition: 0.3s;
+
+}
+
+.dark-mode, .send{
+  --bg-color: #2a2d3e;
+  --text-color: #f5f5fa;
+}
+
+body{
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.switch{
+  border: none;
+  background: transparent;
+} */
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+}
+
+
+main{
+  display: flex;
+  flex-direction: row;
+  background: #575757;
+  color: white;
+  height: 100dvh;
+}
+ 

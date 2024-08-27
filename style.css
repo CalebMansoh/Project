@@ -2,12 +2,18 @@
   padding: 0;
   margin: 0;
   font-family: Roboto;
+  scroll-behavior: smooth;
 }
 
 .carousel-item img{
   width: 100% !important;
   height: 75vh !important;
 }
+
+#rest1{
+  display: none !important;
+}
+
 
 #joe{
   border: 1px solid white !important;
@@ -47,10 +53,10 @@
 
 #turn{
   position: absolute !important;
-  top: 6vh !important;
+  /* top: 6vh !important; */
   background-color: green !important;
   opacity: 0.9 !important;
-  z-index: 5 !important;
+  z-index: 2 !important;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
   align-items: center;
@@ -130,4 +136,50 @@
 
 .stylefooter img{
   background-color: green !important;
+}
+
+.send{
+  position: absolute;
+  width: 500px;
+  top: 0;
+  background: #e2e2ff;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 99;
+  padding: 10px 50px;
+  display: none;
+}
+
+.send input, textarea{
+  border: 1px solid black;
+  background: transparent;
+  width: 100%;
+}
+
+.send .title{
+  padding: 3px 35px;
+  color: black  !important;
+}
+
+form input, textarea:focus{
+  outline: none;
+}
+
+ .Call{
+  animation: roll 1s ease infinite; 
+} 
+
+
+
+@keyframes roll {
+  0%{
+    transform: translateY(50%);
+    /* color: aqua; */
+  }
+  100%{
+    transform: translateY(0);
+    /* color: pink; */
+  }
 }

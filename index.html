@@ -22,11 +22,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="base.css"> -->
 </head>
 <body>
 
-  <div>
-    <div class="wrapper">
+  <div style="position: relative;">
+    <!-- <div class="wrapper">
         <div>
           <div class="joe">
             <div class="col order-last" id="ray">
@@ -51,37 +53,49 @@
             <div class="col order-first" id="fast">
               Third in DOM, ordered first
             </div>
-          </div>
+          </div> -->
 
-          <nav class="navbar navbar-expand-lg bg-light" id="turn">
+          <nav class="navbar navbar-expand-sm bg-light" id="turn" style="align-items: center; ">
             <div class="container-fluid">
-              <img src="img/logo.png" alt="">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav text-dark">
-                  <li class="nav-item">
+                  <!-- <img src="img/Dobidi.jfif" alt="" width="100px" id="img"> -->
+                  <!-- <li class="nav-item">
                     <a class="nav-link active me-3" aria-current="page" href="#">Home</a>
+                  </li> -->
+                  <li class="nav-item ">
+                    
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link me-3" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link me-3" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown link
+
+                  <!-- <li class="nav-item">
+                    <a class="nav-link me-3" href="#footer">Contact</a>
+                  </li> -->
+                  <li class="nav-item dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" onclick="myFunction2()">
+                      Products Available
                     </a>
                     <ul class="dropdown-menu ">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                       <li><a class="dropdown-item" href="#">🍊Oranges</a></li>
+                      <li><a class="dropdown-item" href="#">🍅Tomatoes</a></li>
+                      <li><a class="dropdown-item" href="#">🍌Bananas</a></li> 
                     </ul>
                   </li>
+
+                  <!-- <li class="nav-item" style="padding-top: 2%;">
+                    <a href="about.html">About the Project</a>
+                  </li> -->
+                  <!-- <li class="nav-item"><button class="switch nav-link me-3" style="color: white;">Change Backgroud  </button></li> -->
+
+                  
+
+                  <button type="button" class="btn btn-warning btn-outline-light btn-lg" onclick="myFunction()" id="rest1">REQUEST</button>
                 </ul>
+                
               </div>
+              <h3 style="text-align: end; color: #ffff7c" class="Call">Contact: <span style="color: greenyellow;">☎</span> +233-543275281</h1>
             </div>
           </nav>
         </div>
@@ -94,8 +108,8 @@
             <img src="img/backgroud.jpg" alt="First Slide" class="d-block w-60">
             <div class="carousel-caption d-none d-md-block" id="font">
               <h2>Why are we different</h2>
-              <h4>FARMASYST is here to provide monitoring services for all agric <br> projects</h4>
-              <button type="button" class="btn btn-warning btn-outline-light btn-lg">REQUEST DEMO</button>
+              <h4>Dobidi is here to provide monitoring services for all agric <br> projects</h4>
+              <button type="button" class="btn btn-warning btn-outline-light btn-lg" onclick="myFunction()" id="rest">REQUEST</button>
             </div>
           </div>
 
@@ -104,7 +118,7 @@
             <div class="carousel-caption d-none d-md-block" id="font">
               <h2>What's New In Agriculture</h2>
               <h4>Our unique platform is to provide diverse services for all your agric <br> projects</h4>
-              <button type="button" class="btn btn-warning btn-outline-light btn-lg">REQUEST DEMO</button>
+              <button type="button" class="btn btn-warning btn-outline-light btn-lg" onclick="myFunction()">REQUEST</button>
             </div>
           </div>
 
@@ -112,22 +126,40 @@
             <img src="img/slide2.jpg" alt="Third Slide" class="d-block w-60">
             <div class="carousel-caption d-none d-md-block" id="font">
               <h2>What's New In Agriculture Previous</h2>
-              <h4>Farmasyst is here to provide connectivity between Agricbusinesses <br>and farmers</h4>
-              <button type="button" class="btn btn-warning btn-outline-light btn-lg">REQUEST DEMO</button>
+              <h4>Dobidi is here to provide connectivity between Agricbusinesses <br>and farmers</h4>
+              <button type="button" class="btn btn-warning btn-outline-light btn-lg" onclick="myFunction()">REQUEST</button>
             </div>
           </div>
         </div>
       </div>
-  
+
+      <div class="send">
+        <p style="text-align: end; cursor: pointer; color: black !important;"  onclick="demo()">&#x2715</p>
+        <h3 class="title">Send Request</h3>
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+          <input type="hidden" name="access_key" value="902f7916-d11b-4426-81db-3d2710e54f43">
+          <input type="text" placeholder="enter your name" style="width: 100%; padding: 10px; margin: 10px 0px;" required>
+          <br>
+          <input type="text" placeholder="example@gmail.com" style="width: 100%; padding: 10px; margin: 10px 0px;" required>
+          <br>
+          <input type="text" name="location" id="location" placeholder="Location" style="width: 100%; padding: 10px; margin: 10px 0px;" required>
+          <br>
+          <!-- <input type="text" name="adress" id="laddress" placeholder="Address" style="width: 100%; padding: 10px; margin: 10px 0px;"> -->
+          <textarea name="request" id="request" cols="48" rows="5" style="margin-top: 20px; border-radius: 10px; padding: 10px;" placeholder="You request..." required></textarea>
+          <button class="btn btn-success btn-outline-light btn-lg my-2 mx-3" style="transition: 0.4s ease-in-out;">Request</button>
+        </form>
+      </div>
+  </div>    
+
 
 <!--new div--> 
   <div class="container-fluid  text-center py-5 w-60" id="flex">
     <div class="container ps-5">
-      <h2>FARMASYST</h2>
-      <p><b>FARMASYST</b> is an AgricTech company that is solving the challenge of onitoring with the agric sector. We provide a platform for Agribusinesses to monitor farmers and their advance resouces</p>
+      <h2 style="font-size: 45px;">DOBIDI</h2>
+      <p><b>Dobidi Smart FarmaTech</b> is an AgricTech project that is solving the challenge of monitoring with the agric sector. We provide a platform for Agribusinesses to monitor farms and solve post harvest loses. We connect farmers to consumer market by advertising their produce to readily available consumers. </p>
 
       <p class="py-5">
-        With FARMASYST, default on the part of farmers are not worry again
+        With DOBIDI FarmaTech, default on the part of farmers are not worry again
       </p>
     </div>
     <div class="container carousel slide pe-5" data-bs-ride="carousel" id="carouselExampleIndicators">
@@ -138,10 +170,10 @@
         </div>
       <div class="carousel-inner h-100">
         <div class="carousel-item active">
-          <img src="img/slide00.jpg" alt="First Slide" class="d-block w-40">
+          <img src="img/dobidi 2.jpg" alt="First Slide" class="d-block w-40">
         </div>
         <div class="carousel-item ">
-          <img src="img/slide-image.jpg" alt="Second Slide" class="d-block w-40">
+          <img src="img/Dobidi.jpg" alt="Second Slide" class="d-block w-40">
         </div>
       </div>
     </div>
@@ -161,7 +193,7 @@
     <p>Our comprehensive and diverse platform, for effective farm and resource monitoring.</p>
   </div>
 
-  <div class="container w-100                            jusitify-content-around my-5" id="run">
+  <div class="container w-100 jusitify-content-around my-5" id="run">
     <div class="container">
       <img src="img/farma1.png" alt="" class="farma1">
     </div>
@@ -244,7 +276,7 @@
 
 
   <div class="container-fluid text-center my-5" id="pans">
-    <button type="button" class="btn btn-warning btn-outline-success border-success text-success btn-lg">REQUEST DEMO</button>
+    <!-- <button type="button" class="btn btn-warning btn-outline-success border-success text-success btn-lg">REQUEST</button> -->
 
     <p class="py-5">
       <img src="img/services.png" alt="" width="50px">
@@ -258,29 +290,29 @@
   </div>
 
   <div class="container-fluid py-5">
-    <img src="img/kic.png" alt="" width="300px" id="deer">
+    <!-- <img src="img/kic.png" alt="" width="300px" id="deer"> -->
   </div>
   
 
-  <footer class="stylefooter py-3">
-    <div class=" footstyle container-fluid">
+  <footer class="stylefooter py-3" id="footer">
+    <div class=" footstyle container-fluid" style="align-items: baseline;">
       <div class="row  text-light">
           <div class="col  order-first logo" style="padding-top: 11%;">
-              <img src="./img/logo.png" class="img-thumbnail" alt="..." style="width: 150px; background-color:#009a40;border: none; ">
+              <img src="./img/Dobidi_edited.jpg" class="img-thumbnail" alt="..." width="80px" style="max-width: 100%; border-radius: 40px; border: none;">
               <p>Providing a platform <br> Agribusinesses to monitor <br> farmers and their <br> resources.
               </p>
           </div>
-          <div class="col  underlineme" style="padding-top: 14%;">
-              <h5> LOCATION
-              </h5>
-              <p>YENDI, <br> P.O.Box YD 2 <br> Gushegu Road, Yendi. <br> Northern Region, Ghana.</p>
+          <div class="col  underlineme" style="padding-top: 16.5%;">
+            <h5> LOCATION
+            </h5>
+            <p>AWASO, <br> P.O.Box 278 <br> Westhern North Region, Ghana.</p>
           </div>
-          <div class="col  underlineme" style="padding-top: 14%;">
+          <div class="col  underlineme" style="padding-top: 16%;">
               <h5>
                   CONTACT INFO
               </h5>
-              <p style="color: white;">+233 (0) 244120600 <br> +233 (0) 245462317 <br> <a href="" style="color: white;">
-             farmasystltd@gmail.com</a></p>
+              <p style="color: white;">+233 (0) 244120600 <br> +233 (0) 2454623179 <br> <a href="" style="color: white;">
+             dobidiltd@gmail.com</a></p>
 
 
           </div>
@@ -289,13 +321,12 @@
       </div>
       <div class="adress">
           <div class="styleadress1">
-              <p>© 2021 Farmasyst | AgricTech Company Built lovingly by <a href="" style="color: yellowgreen;">Caleb Mansoh</p>
+              <p>© 2021 DOBIDI | AgricTech Company Built lovingly by <a href="" style="color: yellowgreen;">DOBIDI Co.Ltd</p>
 
           </div>
         </div>
       </div>
     </div>
-
 
   </footer>
   
@@ -308,6 +339,7 @@
     })
   </script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
