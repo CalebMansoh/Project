@@ -5,6 +5,20 @@
   scroll-behavior: smooth;
 }
 
+body{
+  animation: opacity 0.9s ease-in-out forwards !important;
+}
+
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
 .carousel-item img{
   width: 100% !important;
   height: 75vh !important;
@@ -183,3 +197,9 @@ form input, textarea:focus{
     /* color: pink; */
   }
 }
+
+
+ .img{
+  width: 100px !important;
+  border-radius: 50% !important;
+} 

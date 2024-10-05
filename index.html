@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/icomap.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/Dobidi_edited.jpg" type="image/x-icon">
   <title>Dobidi Smart   FarmaTech</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="queris.css">
@@ -55,7 +55,7 @@
             </div>
           </div> -->
 
-          <nav class="navbar navbar-expand-sm bg-light" id="turn" style="align-items: center; ">
+          <nav class="navbar navbar-expand-sm bg-light" id="turn" style="align-items: center !important; ">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -70,18 +70,23 @@
                     
                   </li>
 
-                  <!-- <li class="nav-item">
-                    <a class="nav-link me-3" href="#footer">Contact</a>
-                  </li> -->
+                  <li class="nav-item">
+                    <!-- <a class="nav-link me-3" href="#footer">Contact</a> -->
+                    <!-- <img src="img/Dobidi_edited.jpg" alt="" class="img"> -->
+                  </li>
                   <li class="nav-item dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <a class="nav-link dropdown-toggle" href="#" onclick="myFunction2()">
+                    <!-- <a class="nav-link dropdown-toggle" href="#" onclick="myFunction2()">
                       Products Available
                     </a>
                     <ul class="dropdown-menu ">
                        <li><a class="dropdown-item" href="#">🍊Oranges</a></li>
                       <li><a class="dropdown-item" href="#">🍅Tomatoes</a></li>
                       <li><a class="dropdown-item" href="#">🍌Bananas</a></li> 
-                    </ul>
+                    </ul> -->
+
+                    
+
+                    <h2 class="text-white">WELCOME TO DOBIDI FARMA TECH</h2>
                   </li>
 
                   <!-- <li class="nav-item" style="padding-top: 2%;">
@@ -145,8 +150,16 @@
           <input type="text" name="location" id="location" placeholder="Location" style="width: 100%; padding: 10px; margin: 10px 0px;" required>
           <br>
           <!-- <input type="text" name="adress" id="laddress" placeholder="Address" style="width: 100%; padding: 10px; margin: 10px 0px;"> -->
-          <textarea name="request" id="request" cols="48" rows="5" style="margin-top: 20px; border-radius: 10px; padding: 10px;" placeholder="You request..." required></textarea>
-          <button class="btn btn-success btn-outline-light btn-lg my-2 mx-3" style="transition: 0.4s ease-in-out;">Request</button>
+           <details onclick="details()">
+              <summary class="text-slate 600">Available Products</summary>
+              <p class="dropdown-item pt-2">🍊Oranges</p>
+              <p class="dropdown-item">🍅Tomatoes</p>
+              <p class="dropdown-item">🍌Bananas</p>
+           </details>
+          <textarea name="request" id="request" cols="48" rows="5" style="margin-top: 15px; border-radius: 10px; padding: 10px;" placeholder="You request..." required></textarea>
+          <div style="padding-bottom: 15px;">
+            <button class="btn btn-success btn-outline-light btn-lg w-100" style="transition: 0.4s ease-in-out; margin-bottom: px !important; margin-top: 15px;">Request</button>
+          </div>
         </form>
       </div>
   </div>    
