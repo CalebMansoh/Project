@@ -162,7 +162,7 @@ body{
   left: 0;
   margin: auto;
   z-index: 99;
-  padding: 10px 50px;
+  padding: 10px 10px;
   display: none;
 }
 
@@ -203,3 +203,30 @@ form input, textarea:focus{
   width: 100px !important;
   border-radius: 50% !important;
 } 
+
+
+
+.maingrid{
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 2rem;
+}
+
+
+.nav-item img{
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+nav{
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 100;
+}
+
+nav ul li a:hover{
+  color: aqua;
+}
