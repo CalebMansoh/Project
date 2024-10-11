@@ -220,7 +220,7 @@ form input, textarea:focus{
 }
 
 nav{
-  position: fixed !important;
+  position: static !important;
   top: 0 !important;
   left: 0 !important;
   right: 0 !important;
