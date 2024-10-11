@@ -7,22 +7,23 @@
   <link rel="shortcut icon" href="img/Dobidi_edited.jpg" type="image/x-icon">
   <link rel="stylesheet" href="products.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="product-queries.css">
 </head>
 <body>
 
   <nav>
-  <div class="home">
-    <img src="img/Dobidi_edited.jpg" alt="" class="nav-img">
-    <a href="index.html">Home</a>
-  </div>
-  <div class="form">
-    <img src="img/icon_search.svg" alt="">
-    <form >
-      <input type="search" name="search" id="search" placeholder="Search Products">
-    </form>
-  </div>
+    <div class="home">
+      <img src="img/Dobidi_edited.jpg" alt="" class="nav-img">
+      <a href="index.html">Home</a>
+    </div>
+    <!-- <div class="form">
+      <img src="img/icon_search.svg" alt="">
+      <form >
+        <input type="search" name="search" id="search" placeholder="Search Products" onkeyup="Search()">
+      </form>
+    </div> -->
   </nav>
-
+  <div id="products">
     <div class="fruits">
       <h2>FRUITS</h2>
       <div class="cover">
@@ -53,7 +54,7 @@
             Carrots are highly valued for their nutritional content. They are an excellent source of beta-carotene, which the body converts into vitamin A, essential for maintaining healthy vision and immune function. In a standard serving size of 100 grams, raw carrots provide approximately 41 calories and contain significant amounts of vitamin A (93% of the Daily Value), along with moderate levels of vitamin K and potassium.
           </p>
         </div>
-        <div class="products">
+        <div class="products" id="tomatoes">
           <img src="img/download (5).jfif" alt="">
           <hr>
           <p>
@@ -73,7 +74,7 @@
             Maize seeds, commonly known as corn, are a staple food in many parts of the world and are valued for their nutritional content. The composition of maize seeds can vary depending on the variety, but generally, they contain significant amounts of carbohydrates, proteins, fats, vitamins, and minerals.
           </p>
         </div>
-        <div class="products">
+        <div class="products" id="beans">
           <img src="img/download (7).jfif" alt="">
           <hr>
           <p>
@@ -85,8 +86,8 @@
 
     <div class="fruits">
       <h2>CROPS</h2>
-      <div class="cover">
-        <div class="products" id="">
+      <div class="cover" id="cover-pro">
+        <div class="products" id="pepper">
           <img src="img/download (8).jfif" alt="">
           <hr>
           <p>
@@ -104,5 +105,8 @@
     </div>
 
   </div>
+
+
+  <script src="products.js"></script>
 </body>
 </html>
