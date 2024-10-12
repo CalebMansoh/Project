@@ -7,4 +7,55 @@
 
 #flex{
   display: flex !important;
+  flex-direction: row !important;
+}
+
+@media only screen and (max-width: 768px){
+  #flex{
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  #flex img{
+    width: 200px;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  nav{
+    flex-direction: column;
+    width: 100% !important;
+  }
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5 rem;
+  background-color: #018d57;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link img{
+  width: 45px;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.nav-link a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #d6d6d6;
+  transition: 0.5s ease-in-out;
+}
+
+nav a:hover{
+  color: aqua;
+}
+
+svg{
+  color: white;
+  
 }

@@ -7,6 +7,8 @@
 
 body{
   background: linear-gradient(to left, #7cb8a6, #afebff);
+  background-size: cover;
+  background-position-x: center;
   animation: opacity 0.8s ease-in-out;
   transition: 0.8s;
   scroll-behavior: smooth;
