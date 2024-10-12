@@ -5,6 +5,22 @@
   font-family: Roboto;
 }
 
+body{
+  background: linear-gradient(to left, #7cb8a6, #afebff);
+  background-size: cover;
+  background-position-x: center;
+  animation: opacity 0.9s ease-in-out;
+}
+
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 nav{
   width: 100%;
   background-color: #018d57;
@@ -21,23 +37,58 @@ nav p{
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  animation: moveFromTop 0.9s ease-in-out forwards;
+}
+
+@keyframes moveFromTop {
+  from{
+    transform: translateY(-10px);
+  }
+
+  to{
+    transform: translateY(0);
+  }
 }
 
 header{
   text-align: center;
 }
 
-header h1{
-  border: 1px solid black;
+h1{
+  color: #707070;
+  animation: moveFromLeft 0.9s ease-in-out forwards;
+}
+
+@keyframes moveFromLeft {
+  0%{
+    transform: translateX(-50px);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
 }
 
 .main-gallery{
   display: flex;
+  flex-direction: row;
   max-width: 800px;
   height: 450px;
   margin: auto;
   justify-content: center;
   gap: 1rem;
+  margin-top: 4rem;
+  animation: moveFromRight 0.9s ease-in-out forwards;
+}
+
+@keyframes moveFromRight {
+  from{
+    transform: translateX(50px);
+  }
+
+  to{
+    transform: translateX(0);
+  }
 }
 
 img{
@@ -65,4 +116,10 @@ img{
 
 .main-gallery:has(.gallery-panel:hover) .gallery-panel:not(:hover) img{
   filter: grayscale(70%);
+}
+
+@media only screen and (max-width: 628px){
+  .main-gallery{
+    flex-direction: column-reverse;
+  }
 }
