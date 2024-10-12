@@ -27,6 +27,10 @@ header{
   text-align: center;
 }
 
+header h1{
+  border: 1px solid black;
+}
+
 .main-gallery{
   display: flex;
   max-width: 800px;
@@ -57,4 +61,8 @@ img{
 
 .gallery-panel:hover{
   flex: 4 10%;
+}
+
+.main-gallery:has(.gallery-panel:hover) .gallery-panel:not(:hover) img{
+  filter: grayscale(70%);
 }
