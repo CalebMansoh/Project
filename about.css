@@ -5,6 +5,23 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background: linear-gradient(to left, #7cb8a6, #afebff);
+  background-size: cover;
+  background-position-x: center;
+  animation: opacity 0.9s ease-in-out forwards !important;
+}
+
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
 #flex{
   display: flex !important;
   flex-direction: row !important;
@@ -57,5 +74,10 @@ nav a:hover{
 
 svg{
   color: white;
-  
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+svg:hover{
+  color: aqua;
 }
