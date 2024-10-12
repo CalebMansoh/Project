@@ -81,3 +81,15 @@ svg{
 svg:hover{
   color: aqua;
 }
+
+#about-sdg{
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-bottom: 4rem;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
